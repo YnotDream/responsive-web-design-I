@@ -200,15 +200,15 @@ nav {
 
 @media (max-width: 500px) {
   .links a {
-      align-items: center;
-      margin: 0px 0px;
-      padding: 4%;
-      text-align: center;
-      border-bottom: solid 1px grey;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 4%;
+    text-align: center;
+    border-bottom: solid 1px grey;
   }
   .links a.firstanchor {
-      border-top: solid 1px grey;
-      margin-top: 4%;
+    border-top: solid 1px grey;
+    margin-top: 4%;
   }
 }
 
@@ -265,33 +265,28 @@ header button {
   }
 }
 
-.firstsection {
+.contentsection {
   display: flex;
   border-top: 1px solid black;
 }
 
-.firstcontent {
-  display: inline-block;
-  width: 48%;
+@media (max-width: 500px) {
+  .contentsection {
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: 10% 0;
+  }
+}
+
+.content {
   margin: 3% 0%;
+  padding-right: 1%;
 }
 
 .middle-img {
   display: flex;
   margin: auto;
   width: 100%;
-}
-
-.secondsection {
-  display: flex;
-  border-bottom: 1px solid black;
-  margin: 1% 0% 0% 0%;
-}
-
-.secondcontent {
-  display: inline-block;
-  width: 33%;
-  margin: 3% 0%;
 }
 
 .contact {
